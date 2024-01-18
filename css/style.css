@@ -150,7 +150,7 @@ section .content{
     max-width: 450px;
     width: 60%;
     margin-right: 100px;
-    transform: scaleX(-1);
+    transform: scaleX(-1) translateX(-900px);
     filter: drop-shadow(-10px 0px 100px #A02A4D);
 }
 
