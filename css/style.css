@@ -17,14 +17,15 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../storage/img/universo3.avif");
+    
 }
 
 nav{
     width: 100%;
     height: 10vh;
-    background: #113F60;
-    margin-bottom: 5%;
+    background: rgba(11, 10, 19, 0.7);
+    margin-bottom: 8%;
 }
 
 .container{
@@ -38,7 +39,7 @@ nav{
 
 .container .logo img{
     margin-left: 20px;
-    width: 100px;
+    height: 3rem;
     filter: drop-shadow(2px 2px 2px white);
 }
 
@@ -105,7 +106,7 @@ section .content{
 }
 
 .main-content h2{
-    color: #f74f10;
+    color: #A02A4D;
     font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
 }
 
@@ -132,7 +133,7 @@ section .content{
     border: none;
     outline: none;
     border-radius: 10px;
-    background: linear-gradient(to bottom right, #f74f10 40%, #8a3313);
+    background: linear-gradient(to bottom right, #A02A4D 40%, #113F60);
     color: white;
     font-weight: 700;
     padding: 0.2px;
@@ -141,17 +142,18 @@ section .content{
 }
 
 .order button:hover{
-    box-shadow: 0 0 30px #f74f10;
-    background: linear-gradient(to bottom right, #8a3313, #f74f10 40%);
+    box-shadow: 0 0 30px #198BCB;
+    background: linear-gradient(to bottom right, #0b0a13, #113F60 40%);
 }
 
 .content .image img{
     max-width: 450px;
-    width: 100%;
+    width: 60%;
     margin-right: 100px;
     transform: scaleX(-1);
-    filter: drop-shadow(-10px -10px 200px #f7102f);
+    filter: drop-shadow(-10px 0px 100px #A02A4D);
 }
+
 
 @media(max-width:800px){
     .content{
