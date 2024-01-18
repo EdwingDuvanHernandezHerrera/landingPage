@@ -35,14 +35,14 @@
                 <h1 data-aos="fade-right" data-aos-duration="2000">UniverseLamp</h1>
                 <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Air Max Plus</h2>
                 <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">MAKE THE GROUD SHAKE</h4>
-                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas fugiat autem deserunt sunt incidunt possimus, expedita aut deleniti aliquid qui repellendus quis repellat ex consequuntur eum totam odit nostrum.</p>
+                <p id="textoIpsum" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas fugiat autem deserunt sunt incidunt possimus, expedita aut deleniti aliquid qui repellendus quis repellat ex consequuntur eum totam odit nostrum.</p>
                 <div class="order">
                     <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">$249.999</h3>
                     <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800">PRE-ORDENAR AHORA</button>
                 </div>
             </div>
             <div class="image">
-                <img src="storage/img/lampara.png" data-aos="zoom-in" data-aos-duration="2000">
+                <img id="boton" src="storage/img/lampara.png" data-aos="zoom-in" data-aos-duration="2000" title="¡Click a la lámpara!">
             </div>
         </div>
     </section>
@@ -50,6 +50,19 @@
     <script>
         AOS.init({
             offset:1
+        });
+    </script>
+    <script>
+        var botonLamp = document.getElementById('boton');
+        var body = document.body;
+        var textoIpsum = document.getElementById('textoIpsum');
+        botonLamp.addEventListener('mousedown', function() {
+            body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(210, 210, 210, 0.5)), url("../storage/img/universo3.avif")';    
+            textoIpsum.style.color = 'black';
+        });
+        botonLamp.addEventListener('mouseup', function() {
+            body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../storage/img/universo3.avif")';    
+            textoIpsum.style.color = '#6d6967';
         });
     </script>
 </body>
