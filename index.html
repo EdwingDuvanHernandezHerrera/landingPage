@@ -56,13 +56,19 @@
         var botonLamp = document.getElementById('boton');
         var body = document.body;
         var textoIpsum = document.getElementById('textoIpsum');
-        botonLamp.addEventListener('mousedown', function() {
-            body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(210, 210, 210, 0.5)), url("../storage/img/universo3.avif")';    
-            textoIpsum.style.color = 'black';
-        });
-        botonLamp.addEventListener('mouseup', function() {
-            body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../storage/img/universo3.avif")';    
-            textoIpsum.style.color = '#6d6967';
+        var fondoClaro = false;
+        botonLamp.addEventListener('click', function() {
+            if(!fondoClaro){
+                body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(210, 210, 210, 0.5)), url("../storage/img/universo3.avif")';    
+                textoIpsum.style.color = 'black';
+                textoIpsum.style.fontWeight = 'bold';
+            }
+            else{
+                body.style.background = 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../storage/img/universo3.avif")';    
+                textoIpsum.style.color = '#6d6967';
+            }
+
+            fondoClaro = !fondoClaro;
         });
     </script>
 </body>
