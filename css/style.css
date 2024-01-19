@@ -17,7 +17,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../storage/img/universo3.avif");
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../storage/img/universo3.png");
 }
 
 
@@ -169,7 +169,7 @@ section .content{
 
 @media(max-width:884px){
     .content .image img{
-        min-width: 500px;
+        min-width: 60%;
     }
 }
 
@@ -179,7 +179,7 @@ section .content{
     }
 
     .image img{
-        width: 100px;
+        width: 430px;
         margin-right: none;
 
     }
